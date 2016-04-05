@@ -1,3 +1,5 @@
-(function($){
-
-})(jquery);
+$(document).ready(function () {
+	$("button").click(function (){
+		$("p").toggle();
+  });
+});
