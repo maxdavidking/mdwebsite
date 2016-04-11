@@ -113,7 +113,7 @@ a:hover {
   display: flex;
   flex-flow: row wrap;
   margin: 1.2em;
-  margin-bottom: 1.2em;
+  margin-bottom: 30.2em;
   height:100%;
   }
 [class*="row"]:last-child {
@@ -141,12 +141,6 @@ a:hover {
 [class*="col-"] {
   padding: 0em;
  }
-h2{
-text-align:center;
-}
-body{
-text-align:center;
-}
 }
 
 @media all and (min-width: 30em) {
