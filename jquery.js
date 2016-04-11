@@ -10,7 +10,7 @@ commented out for now - toggle above works */
 $(document).ready(function () {
 	$("button").click(function() {
 		$('html, body').animate({
-			scrollTop: $(".row3").offset().top
+			scrollTop: $(".row2").offset().top
 		}, 2000);
 	});
 });
