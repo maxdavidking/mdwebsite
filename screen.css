@@ -109,13 +109,14 @@ a:hover {
 /* Modular Styles */
 /* Hint: Class selectors: .video, .diagram, .pullquote */
 
-.row {
+[class*="row"] {
   display: flex;
   flex-flow: row wrap;
   margin: 1.2em;
   margin-bottom: 1.2em;
+  height:100%;
   }
-.row:last-child {
+[class*="row"]:last-child {
   margin-bottom: 0;
   }
 [class*="col-"] {
