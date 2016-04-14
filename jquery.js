@@ -42,7 +42,31 @@ var posting = $.post("ajax/test.html", function(data){
 }, "html");
 posting.done(function( data ) {
     var content = $( data ).find( ".row2" );
-    $( ".result" ).empty().append( content );
+    $( ".row2" ).empty().append( content );
 	});
   });
 });
+/*
+$(document).ready(function () {
+	$(".button2").click(function(){
+var posting = $.post("ajax/test.html", function(data){
+  var mainDiv = $(".row3", data); // finds <div id='mainDiv'>...</div>
+}, "html");
+posting.done(function( data ) {
+    var content = $( data ).find( ".row3" );
+    $( ".row3" ).empty().append( content );
+	});
+  });
+});
+$(document).ready(function () {
+	$(".button3").click(function(){
+var posting = $.post("ajax/test.html", function(data){
+  var mainDiv = $(".row4", data); // finds <div id='mainDiv'>...</div>
+}, "html");
+posting.done(function( data ) {
+    var content = $( data ).find( ".row4" );
+    $( ".row4" ).empty().append( content );
+	});
+  });
+});
+*/
