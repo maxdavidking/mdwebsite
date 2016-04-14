@@ -106,6 +106,13 @@ a:hover {
 /* Layout Styles */
 /* Hint: ID selectors: #header, #navigation, #footer, etc. */
 
+#navbar{
+	position: fixed;
+	top:1.4400000000000002em;;
+	left:0.8333333333333334em;
+	z-index:999;
+}
+
 /* Modular Styles */
 /* Hint: Class selectors: .video, .diagram, .pullquote */
 
@@ -113,7 +120,7 @@ a:hover {
   display: flex;
   flex-flow: row wrap;
   margin: 1.2em;
-  margin-bottom: 30.2em;
+  margin-bottom: 10em;
   height:100%;
   }
 [class*="row"]:last-child {
