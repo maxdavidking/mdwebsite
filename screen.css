@@ -119,6 +119,9 @@ a:hover {
 [class*="row"]:last-child {
   margin-bottom: 0;
   }
+.row2{
+	z-index:999;
+}
 [class*="col-"] {
   padding: 1.2em;
   width: 100%;
