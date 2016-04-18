@@ -1,12 +1,12 @@
 $(document).ready(function () {
-	$(".aboutme").click(function(){
+	$(".nav1").click(function(){
 		$('html, body').animate({
 			scrollTop: $(".wrapper").offset().top
 			}, 1500);
   });
 });
 $(document).ready(function () {
-	$(".background").click(function(){
+	$(".nav2").click(function(){
 		var posting2 = $.post("ajax/test.html", function(data){
 			var mainDiv2 = $(".row2", data); // finds <div id='mainDiv'>...</div>
 			}, "html");
@@ -20,7 +20,7 @@ $(document).ready(function () {
   });
 });
 $(document).ready(function () {
-	$(".projects").click(function(){
+	$(".nav3").click(function(){
 		var posting3 = $.post("ajax/test2.html", function(data){
 			var mainDiv3 = $(".row3", data); // finds <div id='mainDiv'>...</div>
 			}, "html");
@@ -34,7 +34,7 @@ $(document).ready(function () {
   });
 });
 $(document).ready(function () {
-	$(".resume").click(function(){
+	$(".nav4").click(function(){
 		var posting4 = $.post("ajax/test3.html", function(data){
 			var mainDiv4 = $(".row4", data); // finds <div id='mainDiv'>...</div>
 			}, "html");
