@@ -69,7 +69,7 @@ background: linear-gradient( 45deg, #5b4f6a, #54606a );
 }
 body {
   background: linear-gradient( 45deg, #5b4f6a, #54606a );
-	font-family: 'Slabo 27px', serif;
+  font-family: 'Slabo 27px', serif;
   font-size: 1.2em; /*18px/16px Starting with base of 1.2em off of minor third scale*/
   color: #fff;
   line-height: 1.4400000000000002em; /* 25.92px/18px - Next step up in modular scale */
@@ -92,7 +92,7 @@ h2{
 here: http://practicaltypography.com/summary-of-key-rules.html  */
   padding-top: 0.8333333333333334em; 
   padding-bottom: 1.4400000000000002em;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color:#ffed7f;
   }
 a{
@@ -190,7 +190,7 @@ body{
 text-align:left;
   }
 }
-@media all and ( min-width: 42em ) {
+@media all and ( min-width: 55em ) {
   /* set col widths */
 .col-2-3 {
     width: 66.66%;
