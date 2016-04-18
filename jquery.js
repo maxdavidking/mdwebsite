@@ -1,3 +1,4 @@
+//Code for skip to next div buttons.
 $(document).ready(function () {
 	$(".nav1").click(function(){
 		$('html, body').animate({
@@ -7,7 +8,7 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
 	$(".nav2").click(function(){
-		var posting2 = $.post("ajax/test.html", function(data){
+		var posting2 = $.post("ajax/aboutme.html", function(data){
 			var mainDiv2 = $(".row2", data); // finds <div id='mainDiv'>...</div>
 			}, "html");
 		posting2.done(function( data ) {
@@ -21,7 +22,7 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
 	$(".nav3").click(function(){
-		var posting3 = $.post("ajax/test2.html", function(data){
+		var posting3 = $.post("ajax/projects.html", function(data){
 			var mainDiv3 = $(".row3", data); // finds <div id='mainDiv'>...</div>
 			}, "html");
 		posting3.done(function( data ) {
@@ -35,7 +36,7 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
 	$(".nav4").click(function(){
-		var posting4 = $.post("ajax/test3.html", function(data){
+		var posting4 = $.post("ajax/resume.html", function(data){
 			var mainDiv4 = $(".row4", data); // finds <div id='mainDiv'>...</div>
 			}, "html");
 		posting4.done(function( data ) {
