@@ -71,13 +71,14 @@ body {
   background: linear-gradient( 45deg, #5b4f6a, #54606a );
   font-family: 'Slabo 27px', serif;
   font-size: 1.2em; /*18px/16px Starting with base of 1.2em off of minor third scale*/
+  font-weight: 700;
   color: #fff;
   line-height: 1.4400000000000002em; /* 25.92px/18px - Next step up in modular scale */
   padding-top: 1.4400000000000002em; /* 25.92px/18px - Next step up in modular scale */
   padding-left: 0.8333333333333334em; 
   padding-right: 0.694em;
   text-align:left;
-  opacity:.6;
+  opacity:.8;
 }
 
 img {
@@ -106,13 +107,12 @@ display:list-item;
 font-weight: 700;
 }
 li::before{
-		content:">";
-		position: relative;
+	content:">";
+	position: relative;
     bottom: 0.2ex;
     margin-right: 20px;
     color:#ffed7f;
-    font-family: "FontAwesome";
-    font-size: 8px;
+    font-size: 12px;
 }
 
 
@@ -134,15 +134,11 @@ li::before{
   display: flex;
   flex-flow: row wrap;
   margin: 1.2em;
-  margin-bottom: 10em;
-  height:100%;
+  width:100%;
   }
 [class*="row"]:last-child {
-  margin-bottom: 0;
+  margin-bottom: 20em;
   }
-.row2{
-	z-index:999;
-}
 [class*="col-"] {
   padding: 1.2em;
   width: 100%;
@@ -152,6 +148,27 @@ li::before{
 /* State Styles */
 /* Hint: JavaScript-based styles: .nojs, .js, .is-active, .is-hidden */
 /* Within state, repeat the base, layout, and modular structure: */
+[class*="nav"]{
+	border-bottom: 1px solid rgba(192, 192, 192, 0);
+	-webkit-transition: border 500ms ease;
+	-moz-transition: border 500ms ease;
+	-ms-transition: border 500ms ease;
+	-o-transition: border 500ms ease;
+	transition: border 500ms ease; 
+}
+[class*="nav"]
+.nav1:hover{
+		border-bottom: 1px solid rgba(192, 192, 192, 1);
+}
+.nav2:hover{
+		border-bottom: 1px solid rgba(192, 192, 192, 1);
+}
+.nav3:hover{
+		border-bottom: 1px solid rgba(192, 192, 192, 1);
+}
+.nav4:hover{
+		border-bottom: 1px solid rgba(192, 192, 192, 1);
+}
 
 
 /* Media Query Styles */
@@ -166,6 +183,10 @@ li::before{
 [class*="col-"] {
   padding: 0em;
  }
+}
+img{
+	margin-top:4em;
+	width:80%;
 }
 
 @media all and (min-width: 30em) {
