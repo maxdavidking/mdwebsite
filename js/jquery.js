@@ -8,7 +8,7 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
 	$(".nav2").click(function(){
-		var posting2 = $.post("ajax/aboutme.html", function(data){
+		var posting2 = $.post("ajax/background.html", function(data){
 			var mainDiv2 = $(".row2", data); // finds <div id='mainDiv'>...</div>
 			}, "html");
 		posting2.done(function( data ) {
