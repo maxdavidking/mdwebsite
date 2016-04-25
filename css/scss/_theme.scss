@@ -1,6 +1,13 @@
 /* Media Query Styles */
 /* Media Queries Begin */
 
+$font-stackbody: 'Slabo 27px', serif;
+$font-stackalt: 'Open Sans', sans-serif;;
+$backgroundcolour: linear-gradient( 45deg, #5b4f6a, #54606a );
+$textcolour: #fff;
+$altyellow: #ffed7f;
+$highlight:#87cefa;
+
 @media all and (min-width: 1em) {
   
 .wrapper{
@@ -41,11 +48,10 @@ img{
 
 @media all and (min-width: 30em) {
 .wrapper {
-  background: linear-gradient( 45deg, #5b4f6a, #54606a );
+  background: $backgroundcolour;
   margin: 0 auto;
   padding: 1.8em;
   max-width: 95%;
-  background-color: #fff;
   }
 [class*="col-"] {
   padding: 0.833em;
@@ -55,10 +61,10 @@ img {
   max-width:80%;
   }
 h2{
-text-align:left;
+	text-align:left;
   }
 body{
-text-align:left;
+	text-align:left;
   }
 [class*="row"] {
   display: flex;

@@ -1,17 +1,23 @@
+/* Base Styles */
+/* Hint: html element selectors: html, body, p, h2, etc. */
 /* Flexbox grid CSS modified from http://www.sitepoint.com/easy-responsive-css-grid-layouts/ */
-@font-face {
-font-family: 'Slabo 27px', serif;
-font-style: normal;
-}
+
+$font-stackbody: 'Slabo 27px', serif;
+$font-stackalt: 'Open Sans', sans-serif;
+$backgroundcolour: linear-gradient( 45deg, #5b4f6a, #54606a );
+$textcolour: #fff;
+$altyellow: #ffed7f;
+$highlight:#87cefa;
+
 html{
-background: linear-gradient( 45deg, #5b4f6a, #54606a );
+background: $backgroundcolour;
 }
 body {
-  background: linear-gradient( 45deg, #5b4f6a, #54606a );
-  font-family: 'Slabo 27px', serif;
+  background: $backgroundcolour;
   font-size: 1.2em; /*18px/16px Starting with base of 1.2em off of minor third scale*/
   font-weight: 700;
-  color: #fff;
+  font-family: $font-stackbody;
+  color: $textcolour;
   line-height: 1.4400000000000002em; /* 25.92px/18px - Next step up in modular scale */
   padding-top: 1.4400000000000002em; /* 25.92px/18px - Next step up in modular scale */
   padding-left: 0.8333333333333334em; 
@@ -28,18 +34,17 @@ img {
 
 h2{
   font-size:1.728em; /* Two steps up in modular scale*/
-  line-height: 1.43999999999em; /* Font size divided by 83.3333333 (which is 5/6) - headers looked really weird with 120-145% size (as recommended 
-here: http://practicaltypography.com/summary-of-key-rules.html  */
+  font-family: $font-stackalt;
+  line-height: 1.43999999999em; 
   padding-top: 0.8333333333333334em; 
   padding-bottom: 1.4400000000000002em;
-  font-family: 'Open Sans', sans-serif;
-  color:#ffed7f;
+  color:$altyellow;
   }
 a{
   color:black;
 }
 a:hover {
-  color:#ffed7f;
+  color:$altyellow;
 }
 li{
 display:list-item;
@@ -50,6 +55,6 @@ li::before{
 	position: relative;
     bottom: 0.2ex;
     margin-right: 20px;
-    color:#ffed7f;
+    color:$altyellow;
     font-size: 12px;
 }

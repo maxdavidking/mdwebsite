@@ -1,5 +1,4 @@
 /*Reset Styles*/
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -13,284 +12,254 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+  display: block; }
+
 body {
-	line-height: 1;
-}
+  line-height: 1; }
+
 ol, ul {
-	list-style: none;
-}
+  list-style: none; }
+
 blockquote, q {
-	quotes: none;
-}
+  quotes: none; }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
-}
+  content: '';
+  content: none; }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+  border-collapse: collapse;
+  border-spacing: 0; }
 
 /* Resets modified from easy responsive CSS layouts 
 http://www.sitepoint.com/easy-responsive-css-grid-layouts/*/
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 /* Base Styles */
 /* Hint: html element selectors: html, body, p, h2, etc. */
-
+/* Base Styles */
+/* Hint: html element selectors: html, body, p, h2, etc. */
 /* Flexbox grid CSS modified from http://www.sitepoint.com/easy-responsive-css-grid-layouts/ */
-@font-face {
-font-family: 'Slabo 27px', serif;
-font-style: normal;
-}
-html{
-background: linear-gradient( 45deg, #5b4f6a, #54606a );
-}
+html {
+  background: linear-gradient(45deg, #5b4f6a, #54606a); }
+
 body {
-  background: linear-gradient( 45deg, #5b4f6a, #54606a );
-  font-family: 'Slabo 27px', serif;
-  font-size: 1.2em; /*18px/16px Starting with base of 1.2em off of minor third scale*/
+  background: linear-gradient(45deg, #5b4f6a, #54606a);
+  font-size: 1.2em;
+  /*18px/16px Starting with base of 1.2em off of minor third scale*/
   font-weight: 700;
+  font-family: "Slabo 27px", serif;
   color: #fff;
-  line-height: 1.4400000000000002em; /* 25.92px/18px - Next step up in modular scale */
-  padding-top: 1.4400000000000002em; /* 25.92px/18px - Next step up in modular scale */
-  padding-left: 0.8333333333333334em; 
+  line-height: 1.4400000000000002em;
+  /* 25.92px/18px - Next step up in modular scale */
+  padding-top: 1.4400000000000002em;
+  /* 25.92px/18px - Next step up in modular scale */
+  padding-left: 0.8333333333333334em;
   padding-right: 0.694em;
-  text-align:left;
-  opacity:.8;
-}
+  text-align: left;
+  opacity: .8; }
 
 img {
-	display:block;
-	max-width:100%;
-	border-radius: 50%;	
-}
+  display: block;
+  max-width: 100%;
+  border-radius: 50%; }
 
-h2{
-  font-size:1.728em; /* Two steps up in modular scale*/
-  line-height: 1.43999999999em; /* Font size divided by 83.3333333 (which is 5/6) - headers looked really weird with 120-145% size (as recommended 
-here: http://practicaltypography.com/summary-of-key-rules.html  */
-  padding-top: 0.8333333333333334em; 
+h2 {
+  font-size: 1.728em;
+  /* Two steps up in modular scale*/
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.43999999999em;
+  padding-top: 0.8333333333333334em;
   padding-bottom: 1.4400000000000002em;
-  font-family: 'Open Sans', sans-serif;
-  color:#ffed7f;
-  }
-a{
-  color:black;
-}
+  color: #ffed7f; }
+
+a {
+  color: black; }
+
 a:hover {
-  color:#ffed7f;
-}
-li{
-display:list-item;
-font-weight: 700;
-}
-li::before{
-	content:">";
-	position: relative;
-    bottom: 0.2ex;
-    margin-right: 20px;
-    color:#ffed7f;
-    font-size: 12px;
-}
+  color: #ffed7f; }
 
+li {
+  display: list-item;
+  font-weight: 700; }
 
-/* Layout Styles */
-/* Hint: ID selectors: #header, #navigation, #footer, etc. */
-
-#navbar{
-	position: fixed;
-	top:1.4400000000000002em;
-	left:0.8333333333333334em;
-	z-index:99999999;
-	font-family: 'Open Sans', sans-serif;
-}
+li::before {
+  content: ">";
+  position: relative;
+  bottom: 0.2ex;
+  margin-right: 20px;
+  color: #ffed7f;
+  font-size: 12px; }
 
 /* Modular Styles */
 /* Hint: Class selectors: .video, .diagram, .pullquote */
-
+/* Modular Styles */
+/* Hint: Class selectors: .video, .diagram, .pullquote */
 [class*="row"] {
   display: flex;
   flex-flow: row wrap;
-  width:100%;
-  }
+  width: 100%; }
+
 [class*="row"]:last-child {
-  margin-bottom: 20em;
-  }
+  margin-bottom: 20em; }
+
 [class*="col"] {
   padding: 1.2em;
-  width: 100%;
-}
+  width: 100%; }
 
+/* Layout Styles */
+/* Hint: ID selectors: #header, #navigation, #footer, etc. */
+/* Layout Styles */
+/* Hint: ID selectors: #header, #navigation, #footer, etc. */
+#navbar {
+  position: fixed;
+  top: 1.4400000000000002em;
+  left: 0.8333333333333334em;
+  z-index: 99999999; }
 
 /* State Styles */
 /* Hint: JavaScript-based styles: .nojs, .js, .is-active, .is-hidden */
 /* Within state, repeat the base, layout, and modular structure: */
-[class*="nav"]{
-	border-bottom: 1px solid rgba(192, 192, 192, 0);
-	-webkit-transition: border 500ms ease;
-	-moz-transition: border 500ms ease;
-	-ms-transition: border 500ms ease;
-	-o-transition: border 500ms ease;
-	transition: border 500ms ease; 
-}
-.nav1:hover{
-		border-bottom: 1px solid rgba(192, 192, 192, 1);
-}
-.nav2:hover{
-		border-bottom: 1px solid rgba(192, 192, 192, 1);
-}
-.nav3:hover{
-		border-bottom: 1px solid rgba(192, 192, 192, 1);
-}
-.nav4:hover{
-		border-bottom: 1px solid rgba(192, 192, 192, 1);
-}
+/* State Styles */
+/* Hint: JavaScript-based styles: .nojs, .js, .is-active, .is-hidden */
+/* Within state, repeat the base, layout, and modular structure: */
+[class*="nav"] {
+  border-bottom: 1px solid rgba(192, 192, 192, 0);
+  -webkit-transition: border 500ms ease;
+  -moz-transition: border 500ms ease;
+  -ms-transition: border 500ms ease;
+  -o-transition: border 500ms ease;
+  transition: border 500ms ease; }
 
+.nav1:hover {
+  border-bottom: 1px solid silver; }
+
+.nav2:hover {
+  border-bottom: 1px solid silver; }
+
+.nav3:hover {
+  border-bottom: 1px solid silver; }
+
+.nav4:hover {
+  border-bottom: 1px solid silver; }
 
 /* Media Query Styles */
-
 /* Media Queries Begin */
-
+/* Media Query Styles */
+/* Media Queries Begin */
 @media all and (min-width: 1em) {
-  
-.wrapper{
-  padding:0em;
-  }
-[class*="col-"] {
-  padding: 0em;
- }
-img{
-	margin-top:4em;
-	width:80%;
-}
-#navbar{
-	font-size:0.4em;
-}
-.row1 {
-	display: flex;
-	flex-flow: row wrap;
-	margin-left: 2.4em;
-  }
-.row2:last-child{
-	display: flex;
-	flex-flow: row wrap;
-	margin-left: 2.4em;
-}
-.row3:last-child{
-	display: flex;
-	flex-flow: row wrap;
-	margin-left: 2.4em;
-}
-.row4:last-child{
-	display: flex;
-	flex-flow: row wrap;
-	margin-left: 1.2em;
-}
-}
+  .wrapper {
+    padding: 0em; }
 
+  [class*="col-"] {
+    padding: 0em; }
 
+  img {
+    margin-top: 4em;
+    width: 80%; }
+
+  #navbar {
+    font-size: 0.4em; }
+
+  .row1 {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 2.4em; }
+
+  .row2:last-child {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 2.4em; }
+
+  .row3:last-child {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 2.4em; }
+
+  .row4:last-child {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 1.2em; } }
 @media all and (min-width: 30em) {
-.wrapper {
-  background: linear-gradient( 45deg, #5b4f6a, #54606a );
-  margin: 0 auto;
-  padding: 1.8em;
-  max-width: 95%;
-  background-color: #fff;
-  }
-[class*="col-"] {
-  padding: 0.833em;
-  width: 100%;
-  }
-img {
-  max-width:80%;
-  }
-h2{
-text-align:left;
-  }
-body{
-text-align:left;
-  }
-[class*="row"] {
-  display: flex;
-  flex-flow: row wrap;
-  margin:1.8em;
-  width:100%;
-  }
-#navbar{
-	font-size:0.8em;
-}
-}
-@media all and ( min-width: 55em ) {
+  .wrapper {
+    background: linear-gradient(45deg, #5b4f6a, #54606a);
+    margin: 0 auto;
+    padding: 1.8em;
+    max-width: 95%; }
+
+  [class*="col-"] {
+    padding: 0.833em;
+    width: 100%; }
+
+  img {
+    max-width: 80%; }
+
+  h2 {
+    text-align: left; }
+
+  body {
+    text-align: left; }
+
+  [class*="row"] {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1.8em;
+    width: 100%; }
+
+  #navbar {
+    font-size: 0.8em; } }
+@media all and (min-width: 55em) {
   /* set col widths */
-.column66 {
-    width: 66.66%;
-  }
-.column50 {
-    width: 50%;
-  }
-  
-.column33 {
-	display:flex;
+  .column66 {
+    width: 66.66%; }
+
+  .column50 {
+    width: 50%; }
+
+  .column33 {
+    display: flex;
     width: 33.33%;
-    max-width:100%; /*added so that the image is actually responsive in Firefox & IE*/
-	min-width:0px;
-	align-items:center;
-  }
-.column33 .img {
-	max-width:100%;
-}
-.column25 {
-    width: 25%;
-  }
-  
-}
+    max-width: 100%;
+    /*added so that the image is actually responsive in Firefox & IE*/
+    min-width: 0px;
+    align-items: center; }
 
-@media all and ( min-width: 78em ) { /* allows for 5 width grid */
+  .column33 .img {
+    max-width: 100%; }
+
+  .column25 {
+    width: 25%; } }
+@media all and (min-width: 78em) {
+  /* allows for 5 width grid */
   /* set col widths */
-  
-.column20 {
-    width: 20%;
-  }
-img {
-    max-width:100%;
-  }
-[class*="col-"] {
-  padding: 1.2em;
-  }
-.column66 {
-  padding-right:10.699em;
-  }
-}
+  .column20 {
+    width: 20%; }
 
+  img {
+    max-width: 100%; }
 
+  [class*="col-"] {
+    padding: 1.2em; }
 
+  .column66 {
+    padding-right: 10.699em; } }
 
-
-
-
-
-
-
-
+/*# sourceMappingURL=output.css.map */
