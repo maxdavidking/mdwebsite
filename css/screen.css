@@ -92,7 +92,7 @@ h2 {
   color: #ffed7f; }
 
 a {
-  color: black; }
+  color: #87CEFA; }
 
 a:hover {
   color: #ffed7f; }
@@ -262,4 +262,4 @@ li::before {
   .column66 {
     padding-right: 10.699em; } }
 
-/*# sourceMappingURL=output.css.map */
+/*# sourceMappingURL=screen.css.map */
