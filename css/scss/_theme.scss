@@ -1,0 +1,113 @@
+/* Media Query Styles */
+/* Media Queries Begin */
+
+@media all and (min-width: 1em) {
+  
+.wrapper{
+  padding:0em;
+  }
+[class*="col-"] {
+  padding: 0em;
+ }
+img{
+	margin-top:4em;
+	width:80%;
+}
+#navbar{
+	font-size:0.4em;
+}
+.row1 {
+	display: flex;
+	flex-flow: row wrap;
+	margin-left: 2.4em;
+  }
+.row2:last-child{
+	display: flex;
+	flex-flow: row wrap;
+	margin-left: 2.4em;
+}
+.row3:last-child{
+	display: flex;
+	flex-flow: row wrap;
+	margin-left: 2.4em;
+}
+.row4:last-child{
+	display: flex;
+	flex-flow: row wrap;
+	margin-left: 1.2em;
+}
+}
+
+
+@media all and (min-width: 30em) {
+.wrapper {
+  background: linear-gradient( 45deg, #5b4f6a, #54606a );
+  margin: 0 auto;
+  padding: 1.8em;
+  max-width: 95%;
+  background-color: #fff;
+  }
+[class*="col-"] {
+  padding: 0.833em;
+  width: 100%;
+  }
+img {
+  max-width:80%;
+  }
+h2{
+text-align:left;
+  }
+body{
+text-align:left;
+  }
+[class*="row"] {
+  display: flex;
+  flex-flow: row wrap;
+  margin:1.8em;
+  width:100%;
+  }
+#navbar{
+	font-size:0.8em;
+}
+}
+@media all and ( min-width: 55em ) {
+  /* set col widths */
+.column66 {
+    width: 66.66%;
+  }
+.column50 {
+    width: 50%;
+  }
+  
+.column33 {
+	display:flex;
+    width: 33.33%;
+    max-width:100%; /*added so that the image is actually responsive in Firefox & IE*/
+	min-width:0px;
+	align-items:center;
+  }
+.column33 .img {
+	max-width:100%;
+}
+.column25 {
+    width: 25%;
+  }
+  
+}
+
+@media all and ( min-width: 78em ) { /* allows for 5 width grid */
+  /* set col widths */
+  
+.column20 {
+    width: 20%;
+  }
+img {
+    max-width:100%;
+  }
+[class*="col-"] {
+  padding: 1.2em;
+  }
+.column66 {
+  padding-right:10.699em;
+  }
+}

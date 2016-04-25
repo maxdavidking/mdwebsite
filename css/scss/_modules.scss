@@ -1,0 +1,15 @@
+/* Modular Styles */
+/* Hint: Class selectors: .video, .diagram, .pullquote */
+
+[class*="row"] {
+  display: flex;
+  flex-flow: row wrap;
+  width:100%;
+  }
+[class*="row"]:last-child {
+  margin-bottom: 20em;
+  }
+[class*="col"] {
+  padding: 1.2em;
+  width: 100%;
+}
