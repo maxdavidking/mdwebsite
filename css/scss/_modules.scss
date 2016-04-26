@@ -1,12 +1,6 @@
 /* Modular Styles */
 /* Hint: Class selectors: .video, .diagram, .pullquote */
 
-$font-stackbody: 'Slabo 27px', serif;
-$font-stackalt: 'Open Sans', sans-serif;
-$backgroundcolour: linear-gradient( 45deg, #5b4f6a, #54606a );
-$textcolour: #fff;
-$altyellow: #ffed7f;
-$highlight:#87cefa;
 
 [class*="row"] {
   display: flex;
@@ -17,6 +11,6 @@ $highlight:#87cefa;
   margin-bottom: 20em;
   }
 [class*="col"] {
-  padding: 1.2em;
+  padding: $embase;
   width: 100%;
 }

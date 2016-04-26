@@ -2,20 +2,13 @@
 /* Hint: html element selectors: html, body, p, h2, etc. */
 /* Flexbox grid CSS modified from http://www.sitepoint.com/easy-responsive-css-grid-layouts/ */
 
-$font-stackbody: 'Slabo 27px', serif;
-$font-stackalt: 'Open Sans', sans-serif;
-$backgroundcolour: linear-gradient( 45deg, #5b4f6a, #54606a );
-$textcolour: #fff;
-$altyellow: #ffed7f;
-$highlight:#87cefa;
-
 html{
 background: $backgroundcolour;
 }
 body {
   background: $backgroundcolour;
-  font-size: 1.2em; /*18px/16px Starting with base of 1.2em off of minor third scale*/
-  font-weight: 700;
+  font-size: $embase; /*18px/16px Starting with base of 1.2em off of minor third scale*/
+  font-weight: 600;
   font-family: $font-stackbody;
   color: $textcolour;
   line-height: 1.4400000000000002em; /* 25.92px/18px - Next step up in modular scale */
@@ -53,7 +46,7 @@ font-weight: 700;
 li::before{
 	content:">";
 	position: relative;
-    bottom: 0.2ex;
+    bottom: 0.2px;
     margin-right: 20px;
     color:$altyellow;
     font-size: 12px;

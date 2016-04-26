@@ -1,3 +1,5 @@
+/*SASS variables */
+/*Variables included at the start of the screen.scss file*/
 /*Reset Styles*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -65,7 +67,7 @@ body {
   background: linear-gradient(45deg, #5b4f6a, #54606a);
   font-size: 1.2em;
   /*18px/16px Starting with base of 1.2em off of minor third scale*/
-  font-weight: 700;
+  font-weight: 600;
   font-family: "Slabo 27px", serif;
   color: #fff;
   line-height: 1.4400000000000002em;
@@ -92,7 +94,7 @@ h2 {
   color: #ffed7f; }
 
 a {
-  color: #87CEFA; }
+  color: #87cefa; }
 
 a:hover {
   color: #ffed7f; }
@@ -104,7 +106,7 @@ li {
 li::before {
   content: ">";
   position: relative;
-  bottom: 0.2ex;
+  bottom: 0.2px;
   margin-right: 20px;
   color: #ffed7f;
   font-size: 12px; }
@@ -133,7 +135,9 @@ li::before {
   position: fixed;
   top: 1.4400000000000002em;
   left: 0.8333333333333334em;
-  z-index: 99999999; }
+  z-index: 99999999;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2em; }
 
 /* State Styles */
 /* Hint: JavaScript-based styles: .nojs, .js, .is-active, .is-hidden */
