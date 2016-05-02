@@ -1,13 +1,14 @@
 //Code for skip to next div buttons.
+$("body").removeClass("noscript");
 $(document).ready(function () {
-	$(".nav1").click(function(){
+	$(".navjs1").click(function(){
 		$('html, body').animate({
 			scrollTop: $(".wrapper").offset().top
 			}, 1500);
   });
 });
 $(document).ready(function () {
-	$(".nav2").click(function(){
+	$(".navjs2").click(function(){
 		var posting2 = $.post("ajax/background.html", function(data){
 			var mainDiv2 = $(".row2", data); // finds <div id='mainDiv'>...</div>
 			}, "html");
@@ -21,7 +22,7 @@ $(document).ready(function () {
   });
 });
 $(document).ready(function () {
-	$(".nav3").click(function(){
+	$(".navjs3").click(function(){
 		var posting3 = $.post("ajax/projects.html", function(data){
 			var mainDiv3 = $(".row3", data); // finds <div id='mainDiv'>...</div>
 			}, "html");
@@ -35,7 +36,7 @@ $(document).ready(function () {
   });
 });
 $(document).ready(function () {
-	$(".nav4").click(function(){
+	$(".navjs4").click(function(){
 		var posting4 = $.post("ajax/resume.html", function(data){
 			var mainDiv4 = $(".row4", data); // finds <div id='mainDiv'>...</div>
 			}, "html");

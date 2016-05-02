@@ -2,6 +2,44 @@
 /* Hint: JavaScript-based styles: .nojs, .js, .is-active, .is-hidden */
 /* Within state, repeat the base, layout, and modular structure: */
 
+.nav1   {
+display: none;
+}
+.nav2{
+display: none;
+}
+.nav3{
+display: none;
+}
+.nav4{
+display: none;
+}
+
+.noscript .nav1{
+display:block;
+}
+.noscript .nav2{
+display:block;
+}
+.noscript .nav3{
+display:block;
+}
+.noscript .nav4{
+display:block;
+}
+
+.noscript .navjs1{
+	display:none;
+}
+.noscript .navjs2{
+	display:none;
+}
+.noscript .navjs3{
+	display:none;
+}
+.noscript .navjs4{
+	display:none;
+}
 
 [class*="nav"]{
 	border-bottom: 1px solid rgba(192, 192, 192, 0);
@@ -11,15 +49,15 @@
 	-o-transition: border 500ms ease;
 	transition: border 500ms ease; 
 }
-.nav1:hover{
+.navjs1:hover{
 		border-bottom: 1px solid rgba(192, 192, 192, 1);
 }
-.nav2:hover{
+.navjs2:hover{
 		border-bottom: 1px solid rgba(192, 192, 192, 1);
 }
-.nav3:hover{
+.navjs3:hover{
 		border-bottom: 1px solid rgba(192, 192, 192, 1);
 }
-.nav4:hover{
+.navjs4:hover{
 		border-bottom: 1px solid rgba(192, 192, 192, 1);
 }
