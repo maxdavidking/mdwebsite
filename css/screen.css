@@ -215,17 +215,7 @@ li::before {
   #navbar {
     font-size: 0.4em; }
 
-  .row1 {
-    display: flex;
-    flex-flow: row wrap;
-    margin-left: 2.4em; }
-
-  .row2:last-child {
-    display: flex;
-    flex-flow: row wrap;
-    margin-left: 2.4em; }
-
-  .row3:last-child {
+  .row1, .row2:last-child, .row3:last-child {
     display: flex;
     flex-flow: row wrap;
     margin-left: 2.4em; }
