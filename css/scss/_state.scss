@@ -41,23 +41,12 @@ display:block;
 	display:none;
 }
 
-[class*="nav"]{
-	border-bottom: 1px solid rgba(192, 192, 192, 0);
-	-webkit-transition: border 500ms ease;
-	-moz-transition: border 500ms ease;
-	-ms-transition: border 500ms ease;
-	-o-transition: border 500ms ease;
-	transition: border 500ms ease; 
+[class*="nav"]:hover{
+@include border-bottom-hover;
 }
-.navjs1:hover{
-		border-bottom: 1px solid rgba(192, 192, 192, 1);
+
+[class*="navjs"]:hover{
+@include border-bottom-hover;
 }
-.navjs2:hover{
-		border-bottom: 1px solid rgba(192, 192, 192, 1);
-}
-.navjs3:hover{
-		border-bottom: 1px solid rgba(192, 192, 192, 1);
-}
-.navjs4:hover{
-		border-bottom: 1px solid rgba(192, 192, 192, 1);
-}
+
+
