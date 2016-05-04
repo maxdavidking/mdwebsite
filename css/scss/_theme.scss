@@ -23,14 +23,10 @@ img{
 	margin-left: 2.4em;
   }
 .row2:last-child{
-	display: flex;
-	flex-flow: row wrap;
-	margin-left: 2.4em;
+	@extend .row1;
 }
 .row3:last-child{
-	display: flex;
-	flex-flow: row wrap;
-	margin-left: 2.4em;
+	@extend .row1;
 }
 .row4:last-child{
 	display: flex;
