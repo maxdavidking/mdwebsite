@@ -78,10 +78,15 @@ body {
   text-align: left;
   opacity: .8; }
 
-img {
+.img {
   display: block;
   max-width: 100%;
   border-radius: 50%; }
+
+.img2 {
+  display: block;
+  max-width: 50%;
+  border-radius: 9%;	 }
 
 h2 {
   font-size: 1.728em;
@@ -110,10 +115,15 @@ li::before {
   color: #ffed7f;
   font-size: 12px; }
 
+
 /* Modular Styles */
 /* Hint: Class selectors: .video, .diagram, .pullquote */
 /* Modular Styles */
 /* Hint: Class selectors: .video, .diagram, .pullquote */
+
+.paragraph{
+text-indent: 2em;
+}
 [class*="row"] {
   display: flex;
   flex-flow: row wrap;
@@ -208,7 +218,7 @@ li::before {
     padding: 0em; }
 
   img {
-    margin-top: 4em;
+    /*margin-top: 4em;*/
     width: 80%; }
 
   #navbar {
