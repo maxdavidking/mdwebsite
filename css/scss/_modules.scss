@@ -7,9 +7,6 @@
   flex-flow: row wrap;
   width:100%;
   }
-[class*="row"]:last-child {
-  margin-bottom: 20em;
-  }
 [class*="col"] {
   padding: $embase;
   width: 100%;

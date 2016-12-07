@@ -16,6 +16,7 @@ body {
   padding-right: 0.694em;
   text-align:left;
   opacity:.8;
+  height:100%;
 }
 
 img {
@@ -25,12 +26,12 @@ img {
 }
 img2 {
 	display:block;
-	max-width:50%;
+	max-width:600px;
 	/*border-radius: 50%;	*/
 }
 
 h2{
-  font-size:1.728em; /* Two steps up in modular scale*/
+  font-size:1.4em; /* Two steps up in modular scale*/
   font-family: $font-stackalt;
   line-height: 1.43999999999em; 
   padding-top: 0.8333333333333334em; 
@@ -43,6 +44,12 @@ a{
 a:hover {
   color:$altyellow;
 }
+a.fill-div{
+  display:block;
+  height:100%;
+  width:100%;
+  text-decoration:none;
+}
 li{
 display:list-item;
 font-weight: 700;
@@ -54,4 +61,8 @@ li::before{
     margin-right: 20px;
     color:$altyellow;
     font-size: 12px;
+}
+p{
+padding-top:1em;
+padding-bottom:1em;
 }

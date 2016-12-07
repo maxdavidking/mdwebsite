@@ -76,20 +76,21 @@ body {
   padding-left: 0.8333333333333334em;
   padding-right: 0.694em;
   text-align: left;
-  opacity: .8; }
+  opacity: .8;
+  height: 100%; }
 
-.img {
+img {
   display: block;
   max-width: 100%;
   border-radius: 50%; }
 
-.img2 {
+img2 {
   display: block;
-  max-width: 50%;
-  border-radius: 9%;	 }
+  max-width: 600px;
+  /*border-radius: 50%;	*/ }
 
 h2 {
-  font-size: 1.728em;
+  font-size: 1.4em;
   /* Two steps up in modular scale*/
   font-family: "Open Sans", sans-serif;
   line-height: 1.43999999999em;
@@ -103,6 +104,12 @@ a {
 a:hover {
   color: #ffed7f; }
 
+a.fill-div {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none; }
+
 li {
   display: list-item;
   font-weight: 700; }
@@ -115,22 +122,18 @@ li::before {
   color: #ffed7f;
   font-size: 12px; }
 
+p {
+  padding-top: 1em;
+  padding-bottom: 1em; }
 
 /* Modular Styles */
 /* Hint: Class selectors: .video, .diagram, .pullquote */
 /* Modular Styles */
 /* Hint: Class selectors: .video, .diagram, .pullquote */
-
-.paragraph{
-text-indent: 2em;
-}
 [class*="row"] {
   display: flex;
   flex-flow: row wrap;
   width: 100%; }
-
-[class*="row"]:last-child {
-  margin-bottom: 20em; }
 
 [class*="col"] {
   padding: 1.2em;
@@ -214,15 +217,43 @@ text-indent: 2em;
   .wrapper {
     padding: 0em; }
 
+  .portfoliowrapper {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-content: flex-end;
+    align-content: flex-end;
+    -webkit-height: 100%; }
+
   [class*="col-"] {
     padding: 0em; }
 
   img {
-    /*margin-top: 4em;*/
+    margin-top: 4em;
     width: 80%; }
 
   #navbar {
     font-size: 0.4em; }
+
+  .portfolioline {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 2.4em;
+    width: 80%;
+    margin-bottom: 7.2em; }
+
+  .portfolioline:hover {
+    color: #ffed7f;
+    z-index: 1000; }
 
   .row1, .row2:last-child, .row3:last-child {
     display: flex;
@@ -232,16 +263,35 @@ text-indent: 2em;
   .row4:last-child {
     display: flex;
     flex-flow: row wrap;
-    margin-left: 1.2em; } }
+    margin-left: 1.2em; }
+
+  .img2 {
+    display: block;
+    max-width: 600px;
+    border-radius: 9%; } }
 @media all and (min-width: 30em) {
   .wrapper {
     margin: 0 auto;
     padding: 1.8em;
     max-width: 95%; }
 
+  .portfoliowrapper {
+    padding: 1.8em;
+    max-width: 95%; }
+
   [class*="col-"] {
     padding: 0.833em;
     width: 100%; }
+
+  .portfolioline {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 2.4em;
+    width: 50%; }
+
+  .portfolioline:hover {
+    color: #ffed7f;
+    z-index: 1000; }
 
   img {
     max-width: 80%; }
@@ -259,14 +309,34 @@ text-indent: 2em;
     width: 100%; }
 
   #navbar {
-    font-size: 0.8em; } }
-@media all and (min-width: 55em) {
+    font-size: 0.8em; }
+
+  .img2 {
+    display: block;
+    max-width: 600px;
+    border-radius: 9%; } }
+@media all and (min-width: 30em) and (min-width: 55em) {
   /* set col widths */
   .column66 {
     width: 66.66%; }
 
   .column50 {
     width: 50%; }
+
+  .portfolioline {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 2.4em;
+    width: 20%; }
+
+  .portfolioline:hover {
+    border-bottom: solid silver 1px;
+    -webkit-transition: border 500ms ease;
+    -moz-transition: border 500ms ease;
+    -ms-transition: border 500ms ease;
+    -o-transition: border 500ms ease;
+    transition: border 500ms ease;
+    z-index: 1000; }
 
   .column33 {
     display: flex;
@@ -281,14 +351,21 @@ text-indent: 2em;
 
   .column25 {
     width: 25%; } }
+@media all and (min-width: 30em) {
+  .img2 {
+    display: block;
+    max-width: 600px;
+    border-radius: 9%; } }
 @media all and (min-width: 78em) {
   /* allows for 5 width grid */
   /* set col widths */
   .column20 {
     width: 20%; }
 
-  img {
-    max-width: 100%; }
+  .img2 {
+    display: block;
+    max-width: 600px;
+    border-radius: 9%; }
 
   [class*="col-"] {
     padding: 1.2em; }
