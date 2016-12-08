@@ -39,7 +39,8 @@ img{
 	flex-flow: row wrap;
 	margin-left: 2.4em;
 	width:80%;
-  margin-bottom: 7.2em;
+	margin-bottom: 2.4em;
+	border-style: solid;
 }
 
 .portfolioline:hover{
@@ -130,6 +131,7 @@ body{
 	flex-flow: row wrap;
 	margin-left: 2.4em;
 	width:20%;
+	margin-bottom: 3.6em;
 }
 .portfolioline:hover{
  @include border-bottom-hover;
