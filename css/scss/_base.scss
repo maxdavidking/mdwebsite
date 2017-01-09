@@ -2,10 +2,6 @@
 /* Hint: html element selectors: html, body, p, h2, etc. */
 /* Flexbox grid CSS modified from http://www.sitepoint.com/easy-responsive-css-grid-layouts/ */
 
-html{
-  background: $backgroundcolour;
-  height:225%;
-}
 body {
   font-size: $embase; /*18px/16px Starting with base of 1.2em off of minor third scale*/
   font-weight: 600;
@@ -18,6 +14,9 @@ body {
   text-align:left;
   opacity:.8;
   height:100%;
+  background: $backgroundcolour;
+  padding-bottom:15em;
+  overflow:auto;
 }
 
 img {
