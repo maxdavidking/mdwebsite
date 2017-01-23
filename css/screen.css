@@ -87,6 +87,7 @@ img {
 img2 {
   display: block;
   max-width: 600px;
+  padding-bottom: 1em;
   /*border-radius: 50%;	*/ }
 
 h2 {
@@ -250,7 +251,9 @@ p {
     margin-left: 2.4em;
     width: 80%;
     margin-bottom: 2.4em;
-    border-style: solid; }
+    border-style: solid;
+    max-height: 275px;
+    overflow: hidden; }
 
   .portfolioline:hover {
     color: #ffed7f;
@@ -269,7 +272,8 @@ p {
   .img2 {
     display: block;
     max-width: 600px;
-    border-radius: 9%; } }
+    border-radius: 9%;
+    margin-bottom: 1em; } }
 @media all and (min-width: 30em) {
   .wrapper {
     margin: 0 auto;
@@ -288,7 +292,9 @@ p {
     display: flex;
     flex-flow: row wrap;
     margin-left: 2.4em;
-    width: 50%; }
+    width: 50%;
+    max-height: 275px;
+    overflow: hidden; }
 
   .portfolioline:hover {
     color: #ffed7f;
@@ -315,7 +321,8 @@ p {
   .img2 {
     display: block;
     max-width: 600px;
-    border-radius: 9%; } }
+    border-radius: 9%;
+    margin-bottom: 1em; } }
 @media all and (min-width: 30em) and (min-width: 55em) {
   /* set col widths */
   .column66 {
@@ -329,7 +336,9 @@ p {
     flex-flow: row wrap;
     margin-left: 2.4em;
     width: 20%;
-    margin-bottom: 3.6em; }
+    margin-bottom: 3.6em;
+    max-height: 275px;
+    overflow: hidden; }
 
   .portfolioline:hover {
     border-bottom: solid silver 1px;
@@ -357,7 +366,8 @@ p {
   .img2 {
     display: block;
     max-width: 600px;
-    border-radius: 9%; } }
+    border-radius: 9%;
+    margin-bottom: 1em; } }
 @media all and (min-width: 78em) {
   /* allows for 5 width grid */
   /* set col widths */
@@ -367,7 +377,8 @@ p {
   .img2 {
     display: block;
     max-width: 600px;
-    border-radius: 9%; }
+    border-radius: 9%;
+    margin-bottom: 1em; }
 
   [class*="col-"] {
     padding: 1.2em; }
