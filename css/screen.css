@@ -378,7 +378,8 @@ p {
     display: block;
     max-width: 600px;
     border-radius: 9%;
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    max-height: 180px; }
 
   [class*="col-"] {
     padding: 1.2em; }
