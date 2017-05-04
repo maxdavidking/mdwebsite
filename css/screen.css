@@ -146,11 +146,20 @@ p {
 /* Hint: ID selectors: #header, #navigation, #footer, etc. */
 #navbar {
   position: fixed;
-  top: 1.4400000000000002em;
-  left: 0.8333333333333334em;
+  top: 0em;
   z-index: 99999999;
+  display: flex;
+  width: 90%;
+  background: #ffed7f;
+  box-shadow: 0px 5px 55px 0px rgba(0, 0, 0, 0.75);
+  padding: 1.2em;
+  justify-content: space-around;
   font-family: "Slabo 27px", serif;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  color: #000000; }
+
+#navbar a:link {
+  color: #000000; }
 
 /* State Styles */
 /* Hint: JavaScript-based styles: .nojs, .js, .is-active, .is-hidden */
@@ -216,7 +225,8 @@ p {
 /* Media Queries Begin */
 @media all and (min-width: 1em) {
   .wrapper {
-    padding: 0em; }
+    padding: 0em;
+    box-sizing: border-box; }
 
   .portfoliowrapper {
     display: -webkit-flex;
@@ -248,7 +258,6 @@ p {
   .portfolioline {
     display: flex;
     flex-flow: row wrap;
-    margin-left: 2.4em;
     width: 80%;
     margin-bottom: 2.4em;
     border-style: solid;
@@ -259,15 +268,10 @@ p {
     color: #ffed7f;
     z-index: 1000; }
 
-  .row1, .row2:last-child, .row3:last-child {
+  .row1, .row2:last-child, .row3:last-child, .row4:last-child {
     display: flex;
-    flex-flow: row wrap;
-    margin-left: 2.4em; }
-
-  .row4:last-child {
-    display: flex;
-    flex-flow: row wrap;
-    margin-left: 1.2em; }
+    padding-top: 1.8em;
+    flex-flow: row wrap; }
 
   .img2 {
     display: block;
@@ -278,7 +282,7 @@ p {
   .wrapper {
     margin: 0 auto;
     padding: 1.8em;
-    max-width: 95%; }
+    box-sizing: border-box; }
 
   .portfoliowrapper {
     padding: 1.8em;
