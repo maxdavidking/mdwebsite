@@ -1,0 +1,13 @@
+/* Modular Styles */
+/* Hint: Class selectors: .video, .diagram, .pullquote */
+
+
+[class*="row"] {
+  display: flex;
+  flex-flow: row wrap;
+  width:100%;
+  }
+[class*="col"] {
+  padding: $embase;
+  width: 100%;
+}

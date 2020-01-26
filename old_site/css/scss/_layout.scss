@@ -1,0 +1,21 @@
+/* Layout Styles */
+/* Hint: ID selectors: #header, #navigation, #footer, etc. */
+
+
+#navbar{
+	position: fixed;
+	top:0em;
+	z-index:99999999;
+	display:flex;
+	width:90%;
+	background: #ffed7f;
+    box-shadow: 0px 5px 55px 0px rgba(0,0,0,0.75);
+	padding:1.2em;
+	justify-content:space-around;
+	font-family: $font-stackbody;
+	font-size: $embase;
+	color: $headerblack;
+}
+#navbar a:link{
+	color:$headerblack;
+}
