@@ -1,13 +1,18 @@
 import React from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+`;
+
 const Layout = ({ children }) => (
-  <>
-    <div>
-      <main>{children}</main>
-      <footer />
-    </div>
-  </>
+  <Container>
+    {children}
+  </Container>
 );
 
 Layout.propTypes = {

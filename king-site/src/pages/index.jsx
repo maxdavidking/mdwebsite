@@ -1,28 +1,36 @@
 import React from 'react';
 import styled from 'styled-components';
+import GlobalStyles from '../components/globalStyles';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 const Header = styled.h1`
-  font-family: Rubik;
-  font-weight: 700;
-  line-height: 1.4;
-  color: #FF0032;
 `;
 
 const Body = styled.p`
-  font-family: Rubik;
-  font-weight: 400;
-  line-height: 1.4;
-  color: #000000;
+`;
+
+const Link = styled.a`
+  text-decoration: underline;
+  color: black;
+  padding: 0 0.2em;
 `;
 
 const IndexPage = () => (
   <Layout>
+    <GlobalStyles />
     <SEO title="Home" />
     <Header>Max King</Header>
     <Body>
-      Full Stack Developer at CNYCN in New York City. Interested in Running and Strava&#39;s API.
+      Full Stack Developer at
+      <Link href="https://www.cnycn.org">
+      CNYCN
+      </Link>
+      in New York City, and maker of
+      <Link href="https://fakeUrl.com">
+      Strava Buddy.
+      </Link>
+      &nbsp;
     </Body>
   </Layout>
 );
