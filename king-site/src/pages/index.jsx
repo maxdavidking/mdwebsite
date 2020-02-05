@@ -1,7 +1,7 @@
-import React from "react"
-import Layout from "../components/layout";
-import SEO from "../components/seo"
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 const H1 = styled.h1`
   font-family: Rubik;
@@ -14,6 +14,6 @@ const IndexPage = () => (
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
