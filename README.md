@@ -15,6 +15,10 @@ There are no tests since this is a static site built with Gatsby
 cd king-site && gatsby develop
 
 ## Special Notes/ToDos
+Add SVG and animate on load
+Add comment to anyone that inspects under head to allow anyone to repurpose
 Move king-site directory up a level to root repo directory when finished.
 Remove old site code or keep around for posterity?
 Remove gatsby README
+Remove gatsby defaults in metatags
+Use github actions to deploy site to host
