@@ -30,7 +30,7 @@ function SEO({
       htmlAttributes={{
         lang
       }}
-      title={title}
+      title="Max King's Personal Website"
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {

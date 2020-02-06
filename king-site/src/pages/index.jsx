@@ -30,7 +30,6 @@ const IndexPage = () => (
       <Link href="https://fakeUrl.com">
       Strava Buddy.
       </Link>
-      &nbsp;
     </Body>
   </Layout>
 );
