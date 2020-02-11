@@ -28,6 +28,7 @@ export default createGlobalStyle`
     line-height: 1.4;
     color: #000000;
     padding: 0 20%;
+    margin: 0;
 
     @media (max-width: 768px) {
       padding: 0 10%;
@@ -40,14 +41,5 @@ export default createGlobalStyle`
     font-weight: 700;
     line-height: 1.4;
     color: #FF0032;
-  }
-
-  button {
-  }
-
-  a {
-  }
-
-  footer {
   }
 `;
