@@ -15,12 +15,6 @@ export default createGlobalStyle`
     }
   }
 
-  body {
-  }
-
-  nav {
-  }
-
   p {
     font-family: Rubik;
     font-size: 4rem;
@@ -41,5 +35,9 @@ export default createGlobalStyle`
     font-weight: 700;
     line-height: 1.4;
     color: #FF0032;
+  }
+
+  a {
+    font-family: Rubik;
   }
 `;

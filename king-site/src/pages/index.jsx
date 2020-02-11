@@ -53,6 +53,17 @@ const ImageContainer = styled.div`
   }
 `;
 
+const Contact = styled.a`
+  text-decoration: underline;
+  color: #FF0032;
+  padding: 2em;
+  font-size: 2rem;
+
+  :hover {
+    color: #000000;
+  }
+`;
+
 const ComputerSVG = (
   <svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1186.4 662.8" style={{ enableBackground: 'new 0 0 1186.4 662.8' }} xmlSpace="preserve">
     <g className="computer">
@@ -135,6 +146,9 @@ const IndexPage = () => (
       Strava Buddy.
       </Link>
     </Body>
+    <Contact href="mailto:maxdavidking@gmail.com">
+      maxdavidking[@]gmail.com
+    </Contact>
   </Layout>
 );
 

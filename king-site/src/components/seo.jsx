@@ -23,27 +23,28 @@ function SEO({
     `
   );
 
-  const metaDescription = description || site.siteMetadata.description;
-
   return (
     <Helmet
       htmlAttributes={{
         lang
       }}
       title="Max King's Personal Website"
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
           name: 'description',
-          content: metaDescription
+          content: "This is Max King's personal website"
+        },
+        {
+          name: 'description',
+          content: "This is Max King's personal website"
         },
         {
           property: 'og:title',
-          content: title
+          content: "Max King's Personal Website"
         },
         {
           property: 'og:description',
-          content: metaDescription
+          content: "This is Max King's personal website"
         },
         {
           property: 'og:type',
@@ -59,11 +60,11 @@ function SEO({
         },
         {
           name: 'twitter:title',
-          content: title
+          content: "Max King's Personal Website"
         },
         {
           name: 'twitter:description',
-          content: metaDescription
+          content: "This is Max King's personal website"
         }
       ].concat(meta)}
     >
