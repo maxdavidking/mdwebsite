@@ -142,7 +142,7 @@ const IndexPage = () => (
       CNYCN
       </Link>
       in New York City, and maker of
-      <Link href="https://fakeUrl.com">
+      <Link href="https://stravahelper.com">
       Strava Buddy.
       </Link>
     </Body>
