@@ -3,3 +3,5 @@ css/scss/.sass-cache
 .sass-cache
 draft
 .DS_Store
+/.cache
+/public

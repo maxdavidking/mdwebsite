@@ -1,24 +1,19 @@
-name: Node.js CI
-
-on: [push]
-
+name: Deploy to Netlify
+on:
+  push:
+    branches:
+      - master
 jobs:
-  build:
-
+  publish:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [8.x, 10.x, 12.x]
-
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js 10.13.0
-      uses: actions/setup-node@v1
-      with:
-        node-version: 10.13.0
-    - run: yarn install
-    - run: gatsby build
-    - run: gatsby serve
-      env:
-        CI: true
+      - uses: actions/checkout@master
+
+      - name: Publish
+        uses: netlify/actions/cli@master
+        with:
+          args: deploy --dir=site --functions=functions
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
