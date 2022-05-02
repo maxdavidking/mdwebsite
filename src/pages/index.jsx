@@ -281,8 +281,8 @@ const IndexPage = () => (
     <ImageContainer>{ComputerSVG}</ImageContainer>
     <Header>Max King</Header>
     <Body>
-      Full Stack Developer at
-      <Link href="https://www.cnycn.org">CNYCN</Link>
+      Engineering Manager at
+      <Link href="https://www.helloabound.com">Abound</Link>
       in New York City, and occasional dabbler with the
       <Link href="https://stravahelper.com">Strava API.</Link>
     </Body>
