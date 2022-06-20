@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components/macro';
+import { createGlobalStyle } from "styled-components/macro";
 
 export default createGlobalStyle`
   html {
@@ -24,8 +24,9 @@ export default createGlobalStyle`
     padding: 0 20%;
     margin: 0;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
       padding: 0 10%;
+      font-size: 2.5rem;
     }
   }
 
